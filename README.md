@@ -17,4 +17,10 @@ Semantix teste Engenheiro de Dados
 ### R:O groupByKey agrupa os valores de cada chave no RDD em uma única sequência, o que também permite controlar o particionamento do par de valores-chave resultante do RDD. Esta operação pode ter um peso computacional muito grande se o dataset for muito grande. Caso seja necessário agrupar para executar uma agregação (como uma soma ou média) sobre cada chave, usar o agregateByKey ou o reduzirByKey fornecerá um desempenho muito melhor.
 
 ## **Explique o que o código Scala abaixo faz.**
+'''val textFile = sc.textFile("hdfs://...")
+val counts = textFile.flatMap(line => line.split(" "))
+.map(word => (word, 1))
+.reduceByKey(_ + _)
+counts.saveAsTextFile("hdfs://...")'''
+
 ### R: O código em questão conta as palavras de um arquivo de texto. O código lê o arquivo setando o caminho até ele, separa (split) as palavras utilizando um espaço como condição (“ “), em seguida conta as palavras e salva o resultado em um arquivo de texto
