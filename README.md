@@ -1,7 +1,7 @@
 # Semantix_Engenheiro_de_Dados
 Semantix teste Engenheiro de Dados
 
-## ** Qual o objetivo do comando cache em Spark?**
+## **Qual o objetivo do comando cache em Spark?**
 
 ### R: O comando cache tem o propósito de armazenar na memória, por exemplo um DataFrame que é lido, para que ele esteja disponível para ser usado sem a necessidade de lê-lo novamente. Sendo assim, o método cache( ) ê um comando para usar o nível de armazenamento padrão, que ê o StorageLevel. MEMORY_ONLY, para armazenar objetos na memória)
 
