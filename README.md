@@ -23,5 +23,6 @@ val counts = textFile.flatMap(line => line.split(" "))
 .map(word => (word, 1))
 .reduceByKey(_ + _)
 counts.saveAsTextFile("hdfs://...")
+```
 
 ### R: O código em questão conta as palavras de um arquivo de texto. O código lê o arquivo setando o caminho até ele, separa (split) as palavras utilizando um espaço como condição (“ “), em seguida conta as palavras e salva o resultado em um arquivo de texto
