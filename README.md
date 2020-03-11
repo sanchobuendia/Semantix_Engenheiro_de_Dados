@@ -2,10 +2,9 @@
 Semantix teste Engenheiro de Dados
 
 ## **Qual o objetivo do comando cache em Spark?**
-
 ### **R:** O comando cache tem o propósito de armazenar na memória, por exemplo um DataFrame que é lido, para que ele esteja disponível para ser usado sem a necessidade de lê-lo novamente. Sendo assim, o método cache( ) ê um comando para usar o nível de armazenamento padrão, que ê o StorageLevel. MEMORY_ONLY, para armazenar objetos na memória)
 
-	O mesmo código implementado em Spark é normalmente mais rápido que a implementação equivalente em MapReduce. Por quê?
+## **O mesmo código implementado em Spark é normalmente mais rápido que a implementação equivalente em MapReduce. Por quê?**
 	R: A principal diferença entre Spark e MapReduce está relacionada em como eles processam os dados. Spark faz tudo utilizando a memória enquanto Mapreduce persiste os dados no disco. Por não precisar ler no disco os dados o Spark torna as operações muito mais rápidas.
 
 	Qual é a função do SparkContext ?
